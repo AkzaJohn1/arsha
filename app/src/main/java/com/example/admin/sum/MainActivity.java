@@ -9,7 +9,7 @@ import android.widget.TextClock;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-EditText number1,number2;
+EditText number11,number2;
 Button btn;
 TextView res;
     @Override
@@ -19,11 +19,11 @@ TextView res;
     }
     public void Addition(View V)
     {
-        number1=(EditText)findViewById(R.id.num1);
+        number11=(EditText)findViewById(R.id.num1);
         number2=(EditText)findViewById(R.id.num2);
         btn=(Button)findViewById(R.id.ADD);
         res=(TextView)findViewById(R.id.answer);
-        int i=Integer.parseInt(number1.getText().toString());
+        int i=Integer.parseInt(number11.getText().toString());
         int j=Integer.parseInt(number2.getText().toString());
         int k=i+j;
         res.setText(String.valueOf(k));
